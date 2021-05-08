@@ -1,0 +1,141 @@
+\documentclass[12pt,twoside,openright]{report}
+\usepackage{svniteced_thesis}
+%%\renewcommand{\baselinestretch}{1}
+\usepackage{cuted}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{amsmath}
+%\usepackage{amssymb}
+\usepackage{color}
+\usepackage{csquotes}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{epstopdf}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{multirow}
+\usepackage{subfigure}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{verbatim}
+\newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
+\usepackage{tabularx}
+\usepackage{times}
+\usepackage{fancyhdr}
+\usepackage{rotating}
+%\usepackage{fancyheadings}
+\usepackage{footnote}
+\usepackage{morefloats}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{type1cm}
+\usepackage{eso-pic}
+\usepackage{fancybox}
+\usepackage{lipsum}
+\usepackage{geometry}
+\usepackage{makeidx}
+\usepackage[justification=centering]{caption}
+\usepackage{wrapfig}
+\usepackage{afterpage}
+\usepackage{lscape}
+\usepackage{longtable}
+%\usepackage{cite}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{multirow}
+\usepackage[numbers]{natbib}
+\usepackage{notoccite}
+\usepackage{enumerate}
+\usepackage{placeins}
+\usepackage{rotating}
+\usepackage{setspace}
+\usepackage{lipsum}
+\usepackage{titlesec}
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Title of the Project
+\title{Dissertation Title}
+\Degree{Master of Technology}
+\Specialization{VLSI \& Embedded Systems}
+\AcadYear{2020-21}
+%%%%%%%%%%
+\author{Student Name}
+\AdmNo{Roll Number}
+%%%%%%%%%%
+%For example
+\GuideName{Prof. AAAAAA}						
+\GuidePos{Associate Professor}
+\GuideAssociation{ECED-SVNIT}							%\GuideAssociation{ECED}
+
+% If there is Co-Guide, please enter the following fields.
+% If there is no Co-Guide, either comment the lines or delete them. Don't leave them blank.
+\CoGuideName{Dr. BBBBBB}
+\CoGuidePosn{Assistant Professor}
+\CoGuideAssociation{ECED-SVNIT}
+%
+\ExaminerName{Dr. XXX}
+\ChaimanName{Dr. ZZZ}
+
+%\date{2020-21}
+\date{July 2021}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\MakeTitlePage
+\MakeCerti
+%%%%%%%%%%%%%%%%%%%%%%%%
+\pagestyle{plain}
+\pagenumbering{roman}
+%\newpage
+\clearemptydoublepage
+%%%%%%%%%%%%%%%%%%%%%%%%
+\input{acknowl}
+\addcontentsline{toc}{chapter}{\textbf{Acknowledgement}}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\cleardoublepage
+%\Acknowledgement{acknowl}
+\Abstract{abstract}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\input{decl}
+\addcontentsline{toc}{chapter}{\textbf{Declaration}}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\TableOfContents
+\ListOfFigures
+%\ListOftables
+\listoftables
+%\newpage
+\cleardoublepage
+%\clearemptydoublepage
+%%%%%%%%%%%%%%%%%%%%%%%%
+%\input{abbreviations}
+%\addcontentsline{toc}{chapter}{\textbf{Abbreviations}}
+%%%%%%%%%%%%%%%%%%%%%%%%
+%\newpage
+%\input{listofsymbols}
+%\addcontentsline{toc}{chapter}{\textbf{List of Symbols}}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\StartBody
+\doublespacing
+\pagestyle{fancy}
+\input{chapter1.tex}
+\input{chapter2.tex}
+\input{chapter3.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%
+\StartRef
+\include{bib}
+\bibliographystyle{IEEEtran}
+%\bibliography{IEEEabrv}
+\bibliography{bibliograph}
+%%%%%%%%%%%%%%%%%%%%%%%%
+% If you have more than one Appaendices use
+% '\StartAppendices' instead of '\StartAppendix'
+%\StartAppendix			% 'Appendix' will be printed in Table of Contents
+%\StartAppendices		% 'Appendices' will be printed in Table of Contents
+%\Appendix{Appendices/AppendixA}
+%\Appendix{Appendices/AppendixB}
+\end{document}
